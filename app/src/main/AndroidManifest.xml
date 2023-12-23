@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._4Rent"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCY0iMsPafQmiCmLPPu8mAEVmlSqxwqRT4" />
+
+        <activity
+            android:name=".screens.MyListingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.UserProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RentalFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RentalsPostListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RentalPostDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.TenantAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BlogListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BlogDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyListingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
